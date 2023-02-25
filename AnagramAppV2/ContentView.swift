@@ -12,13 +12,15 @@ struct ContentView: View {
     @State var answerWord : String = ""
     @State var typingBool = false
     @State var guessWord: String = ""
-    
+    @State var answerTally: Int = 0 //Initial Score
+    @State var showingAlert = false
+    @State var alertText : String = ""
     
     let myController : WordController
     
     init() {
         self.myController = WordController()
-        var (firstAnswer,randomWord) = myController.generateRandomWord()
+        let (firstAnswer,randomWord) = myController.generateRandomWord()
         //let answerWord = randomWord
         //I think we have to do the underscore stuff because it's a state variable
         self._displayWord = State(initialValue: randomWord)
@@ -53,13 +55,51 @@ struct ContentView: View {
                 
                 }
             )
-            
             .background(Color.white)
+            
+            Button("Check Answer"){
+                showingAlert = true
+                
+                
+                if guessWord.lowercased() == answerWord {
+                    alertText = "You guessed it right"
+                    answerTally += 1 //increment correct guesses
+                    (answerWord,displayWord) = myController.generateRandomWord()
+                } else {
+                    alertText = "Wrong! try again"
+                    //Nothing else changes
+                }
+                
+                guessWord = ""
+            }
+            .background(Color.white)
+            .padding()
+            
+            Button("Give Up"){
+                showingAlert = true
+                
+                answerTally = 0
+                alertText = "The correct answer was \(answerWord)"
+                (answerWord,displayWord) = myController.generateRandomWord()
+                
+                
+                guessWord = ""
+            }
+            .background(Color.white)
+            .padding()
+            
+            Text("Total number correct is \(answerTally)")
+            
+            
             Spacer()
             
         }
         .padding()
         .background(Color.yellow)
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Message"), message: Text(alertText), dismissButton: .default(Text("OK")))
+
+        }
        
     }
 }
