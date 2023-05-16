@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/williamfloyd/Documents/AppProjects/AnagramAppV4/AnagramAppV4.xcodeproj">
    </FileRef>
 </Workspace>

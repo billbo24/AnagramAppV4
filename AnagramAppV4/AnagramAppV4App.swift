@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct AnagramAppV2App: App {
+struct AnagramAppV4App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
