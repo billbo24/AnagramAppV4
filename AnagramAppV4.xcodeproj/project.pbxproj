@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EABDD842A1504BB00793676 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABDD832A1504BB00793676 /* WelcomePage.swift */; };
+		3EABDD862A15294100793676 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABDD852A15294100793676 /* TextStyle.swift */; };
+		3EABDD882A152D5000793676 /* GamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABDD872A152D5000793676 /* GamePage.swift */; };
+		3EABDD8A2A152F9600793676 /* PersistentVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABDD892A152F9600793676 /* PersistentVariables.swift */; };
 		3EC5E9AA29A86FB1008A6095 /* AnagramAppV4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC5E9A929A86FB1008A6095 /* AnagramAppV4App.swift */; };
 		3EC5E9AC29A86FB1008A6095 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC5E9AB29A86FB1008A6095 /* ContentView.swift */; };
 		3EC5E9AE29A86FB2008A6095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC5E9AD29A86FB2008A6095 /* Assets.xcassets */; };
@@ -16,9 +20,14 @@
 		3EC5E9BE29A97C61008A6095 /* LetterObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC5E9BD29A97C61008A6095 /* LetterObject.swift */; };
 		3EC5E9C029A9D1AE008A6095 /* engmix.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EC5E9BF29A9D1AE008A6095 /* engmix.txt */; };
 		3EC5E9C229A9D200008A6095 /* Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EC5E9C129A9D200008A6095 /* Words.txt */; };
+		3EEBF7442A316F2300C14645 /* HugeDictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EEBF7432A316F2300C14645 /* HugeDictionary.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EABDD832A1504BB00793676 /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
+		3EABDD852A15294100793676 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		3EABDD872A152D5000793676 /* GamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePage.swift; sourceTree = "<group>"; };
+		3EABDD892A152F9600793676 /* PersistentVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentVariables.swift; sourceTree = "<group>"; };
 		3EC5E9A629A86FB1008A6095 /* AnagramAppV4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnagramAppV4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC5E9A929A86FB1008A6095 /* AnagramAppV4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnagramAppV4App.swift; sourceTree = "<group>"; };
 		3EC5E9AB29A86FB1008A6095 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,6 +38,7 @@
 		3EC5E9BD29A97C61008A6095 /* LetterObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterObject.swift; sourceTree = "<group>"; };
 		3EC5E9BF29A9D1AE008A6095 /* engmix.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = engmix.txt; sourceTree = "<group>"; };
 		3EC5E9C129A9D200008A6095 /* Words.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Words.txt; sourceTree = "<group>"; };
+		3EEBF7432A316F2300C14645 /* HugeDictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HugeDictionary.txt; path = AnagramAppV4/HugeDictionary.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +73,15 @@
 			children = (
 				3EC5E9A929A86FB1008A6095 /* AnagramAppV4App.swift */,
 				3EC5E9AB29A86FB1008A6095 /* ContentView.swift */,
+				3EABDD872A152D5000793676 /* GamePage.swift */,
+				3EABDD832A1504BB00793676 /* WelcomePage.swift */,
+				3EABDD852A15294100793676 /* TextStyle.swift */,
 				3EC5E9B729A86FC6008A6095 /* WordObject.swift */,
 				3EC5E9BD29A97C61008A6095 /* LetterObject.swift */,
 				3EC5E9BB29A9773E008A6095 /* WordController.swift */,
+				3EABDD892A152F9600793676 /* PersistentVariables.swift */,
 				3EC5E9C129A9D200008A6095 /* Words.txt */,
+				3EEBF7432A316F2300C14645 /* HugeDictionary.txt */,
 				3EC5E9BF29A9D1AE008A6095 /* engmix.txt */,
 				3EC5E9AD29A86FB2008A6095 /* Assets.xcassets */,
 				3EC5E9AF29A86FB2008A6095 /* Preview Content */,
@@ -143,6 +158,7 @@
 				3EC5E9C029A9D1AE008A6095 /* engmix.txt in Resources */,
 				3EC5E9B129A86FB2008A6095 /* Preview Assets.xcassets in Resources */,
 				3EC5E9C229A9D200008A6095 /* Words.txt in Resources */,
+				3EEBF7442A316F2300C14645 /* HugeDictionary.txt in Resources */,
 				3EC5E9AE29A86FB2008A6095 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,9 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EABDD882A152D5000793676 /* GamePage.swift in Sources */,
 				3EC5E9AC29A86FB1008A6095 /* ContentView.swift in Sources */,
 				3EC5E9B829A86FC6008A6095 /* WordObject.swift in Sources */,
+				3EABDD8A2A152F9600793676 /* PersistentVariables.swift in Sources */,
 				3EC5E9BE29A97C61008A6095 /* LetterObject.swift in Sources */,
+				3EABDD862A15294100793676 /* TextStyle.swift in Sources */,
+				3EABDD842A1504BB00793676 /* WelcomePage.swift in Sources */,
 				3EC5E9AA29A86FB1008A6095 /* AnagramAppV4App.swift in Sources */,
 				3EC5E9BC29A9773E008A6095 /* WordController.swift in Sources */,
 			);

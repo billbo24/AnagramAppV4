@@ -11,7 +11,7 @@ import SwiftUI
 struct AnagramAppV4App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(PersistentVariables())
         }
     }
 }
