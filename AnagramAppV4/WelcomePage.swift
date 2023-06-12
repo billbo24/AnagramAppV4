@@ -24,24 +24,24 @@ struct WelcomePage: View {
                         persistentVariables.showGamePage = true
                     }
                     ) {
-                        Text("Click me")
+                        Text("Start Game")
                             .titleScreenText()
                         
                         
                     }
                     
                     
-                    Text("Start Game")
-                        .titleScreenText() //This references a style we defined in the text style swift file
-                        .padding()
+//                    Text("Start Game")
+//                        .titleScreenText() //This references a style we defined in the text style swift file
+//                        .padding()
                     
                     
-                    Text("Options")
-                        .titleScreenText()
-                    
-                    
-                    Text("Credits")
-                        .titleScreenText()
+//                    Text("Options")
+//                        .titleScreenText()
+//
+//
+//                    Text("Credits")
+//                        .titleScreenText()
                     
                     
                 }

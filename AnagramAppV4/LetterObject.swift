@@ -21,9 +21,10 @@ struct LetterObject: View {
         
         ZStack {
             //Lowercased just helps keep things clean.  Now even if we pass capital letters, it uses a lower cases to build the string for the image
-            Image("letter_"+letter.lowercased())
-                .resizable()
-                .frame(width:width/2,height:height/2)
+//            Image("letter_"+letter.lowercased())
+//                .resizable()
+//                .frame(width:width/2,height:height/2)
+            Text("\(letter.uppercased())").font(.system(size: width*0.8)).bold()
         }
         .scaledToFit()
         .frame(width:width,height:height)
@@ -34,6 +35,6 @@ struct LetterObject: View {
 
 struct LetterObject_Previews: PreviewProvider {
     static var previews: some View {
-        LetterObject(letter:"B",width: 200,height: 200)
+        LetterObject(letter:"q",width: 200,height: 200)
     }
 }
