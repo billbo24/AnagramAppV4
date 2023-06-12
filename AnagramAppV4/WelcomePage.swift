@@ -36,9 +36,9 @@ struct WelcomePage: View {
 //                        .padding()
                     
                     
-//                    Text("Options")
-//                        .titleScreenText()
-//
+                    Text("Options")
+                        .titleScreenText()
+
 //
 //                    Text("Credits")
 //                        .titleScreenText()
