@@ -47,16 +47,25 @@ struct GamePage: View {
                 
                 Spacer()
                 //Gonna put these two things into a VSTACK
-                VStack{
+                VStack(alignment:.leading){
                     let wordLength = answerWord.count
+                    let spacingSize = UIScreen.main.bounds.width / CGFloat(answerWord.count)
                     
                     //This could be the "staging word"
-                    WordObject(curWord: $displayWord,outputWord: $answerDisplayWord,numLetters: wordLength).transition(.slide)
+                    //Ternary operator lets us conditionally put spacing
+                    WordObject(curWord: $displayWord,outputWord: $answerDisplayWord,numLetters: wordLength).transition(.slide).padding(.bottom,answerDisplayWord == "" ? spacingSize : 0)
+                    
                     
                     //This will be our kinda answer display word
-                    WordObject(curWord: $answerDisplayWord,outputWord:$displayWord,numLetters: wordLength).transition(.slide)
-                        
-                }
+                    WordObject(curWord: $answerDisplayWord,outputWord:$displayWord,numLetters: wordLength).transition(.slide).padding(.top,displayWord == "" ? spacingSize : 0)
+                
+                }.frame(
+                    minWidth: 0,
+                    maxWidth: .infinity,
+                    minHeight: 0,
+                    //maxHeight: .infinity,
+                    alignment: .topLeading
+                  )
                 
                 
                 Button("Shuffle") {

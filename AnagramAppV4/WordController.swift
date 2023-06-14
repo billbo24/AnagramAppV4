@@ -90,8 +90,8 @@ class WordController {
         let secondString = String(ansWord.lowercased().sorted())
         
         if firstString == secondString {
-            print("They're equal, now let's check if the guess is in the dictionary")
-            print("guessed \(guessWord) and answer is \(ansWord)")
+            //print("They're equal, now let's check if the guess is in the dictionary")
+            //print("guessed \(guessWord) and answer is \(ansWord)")
             if allWordsDictionary.contains(guessWord.lowercased()) {
                 //This means they're anagrams and both are in the dictionary!
                 return true

@@ -46,12 +46,12 @@ struct WordObject: View {
                     //This is where we add the letter to the output word
                     outputWord += letters[letter]
                     
-                    print("numLetters is \(numLetters)")
+                    //print("numLetters is \(numLetters)")
                     //We also need to remove the letter from the input word.  This one is not as straightforward and we must remove the letter we want by removing the index.  I
                     let stringIndex = curWord.index(curWord.startIndex, offsetBy: letter)
 
                     curWord.remove(at: stringIndex)
-                    print("\(outputWord) is the word")
+                    //print("\(outputWord) is the word")
                 }
                 
             }
@@ -65,6 +65,6 @@ struct WordObject: View {
 
 struct WordObject_Previews: PreviewProvider {
     static var previews: some View {
-        WordObject(curWord:.constant("pepper"),outputWord: .constant(""),numLetters: 4)
+        WordObject(curWord:.constant("pepper"),outputWord: .constant(""),numLetters: 7)
     }
 }
